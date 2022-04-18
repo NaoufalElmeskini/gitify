@@ -1,4 +1,4 @@
-# Make executable with chmod +x <<filename.sh>>
+# Make executable with chmod +x <<this_file.sh>>
 
 
 # step 1: name of the remote repo. Enter a SINGLE WORD ..or...separate with hyphens
@@ -16,18 +16,14 @@ printf '%q\n' "${PWD##*/}" # to print to stdout, quoted for use as shell input
 REPO_NAME=$LOCAL_DIR
 echo repo_name : $REPO_NAME;
 
-DESCRIPTION=""
-echo $DESCRIPTION;
 
 # step 2:  the local project folder path
 
 echo "Enter your Github username:"
 read USERNAME
-echo "Github username: "$USERNAME
 
 echo "Enter your Github token:"
 read TOKEN
-echo "TOKEN: " TOKEN
 
 # step 4: initialise the repo locally, create blank README, add and commit
 git init
